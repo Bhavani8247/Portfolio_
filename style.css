@@ -17,12 +17,30 @@ align-items:center;
 padding:20px 80px;
 background:#050505;
 }
+@media (max-width:768px){
+
+.nav-links{
+flex-direction:column;
+gap:15px;
+background:#111;
+position:absolute;
+top:70px;
+right:0;
+padding:20px;
+display:none;
+}
+
+}
 
 .logo{
 display:flex;
 align-items:center;
 gap:10px;
 font-weight:600;
+}
+img{
+max-width:100%;
+height:auto;
 }
 
 .dot{
@@ -53,6 +71,19 @@ max-width:600px;
 .hero-left h1{
 font-size:40px;
 color:#ccc;
+}
+@media (max-width: 768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.hero-right img{
+width:250px;
+}
+
 }
 
 .name{
@@ -318,7 +349,7 @@ margin-bottom:50px;
 
 .projects-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
 }
 
@@ -418,6 +449,17 @@ border:1px solid rgba(255,255,255,0.08);
 box-shadow:0 0 40px rgba(0,255,255,0.2);
 overflow:hidden;
 }
+@media (max-width:768px){
+
+.skills-canvas{
+height:400px;
+}
+
+.skill{
+width:40px;
+}
+
+}
 
 /* ICONS */
 
@@ -506,7 +548,8 @@ box-shadow:0 0 20px rgba(138,92,255,0.6);
 /* CARD */
 
 .resume-card{
-max-width:900px;
+/* max-width:900px; */
+width:90%;
 margin:auto;
 padding:50px;
 
@@ -708,4 +751,24 @@ text-decoration:none;
 
 .contact-section a:hover{
 text-decoration:underline;
+}
+section{
+padding:80px 8%;
+}
+
+@media (max-width:768px){
+section{
+padding:60px 5%;
+}
+}
+@media (max-width:768px){
+
+.name{
+font-size:40px;
+}
+
+.hero-left h1{
+font-size:24px;
+}
+
 }
