@@ -16,6 +16,7 @@ justify-content:space-between;
 align-items:center;
 padding:20px 80px;
 background:#050505;
+
 }
 @media (max-width:768px){
 
@@ -463,14 +464,14 @@ width:40px;
 
 /* ICONS */
 
-.skill{
+.skill-icon{
 position:absolute;
 width:60px;
 transition:0.3s;
 animation:float 6s ease-in-out infinite;
 }
 
-.skill:hover{
+.skill-icon:hover{
 transform:scale(1.2);
 }
 
@@ -784,4 +785,149 @@ height:100%;
 z-index:-1; /* keeps particles behind everything */
 background:#050505;
 pointer-events:none;
+}
+.social-group{
+margin-top:40px;
+text-align:center;
+}
+
+.social-group h3{
+margin-bottom:20px;
+color:#aaa;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.social-icon{
+width:35px;
+height:35px;
+transition:0.3s;
+filter:grayscale(100%);
+}
+
+.social-icon:hover{
+transform:scale(1.2);
+filter:grayscale(0%);
+}
+.floating-social{
+position:fixed;
+right:30px;
+top:50%;
+transform:translateY(-50%);
+background:transparent;
+padding:20px 12px;
+border-radius:30px;
+display:flex;
+flex-direction:column;
+gap:20px;
+border:1px solid rgba(255,255,255,0.1);
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+z-index:1000;
+}
+
+.floating-social a{
+color:#ccc;
+font-size:20px;
+transition:0.3s;
+}
+
+.floating-social a:hover{
+color:#4a4952;
+transform:scale(1.2);
+}
+.skills-section{
+padding:120px 8%;
+text-align:center;
+}
+
+.skills-title{
+font-size:50px;
+margin-bottom:50px;
+}
+.skill-icon{
+position:absolute;
+width:60px;
+animation:float 6s infinite;
+}
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+margin-top:80px;
+}
+
+.skills-card{
+background:#0b132b;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(0,255,255,0.2);
+min-height:260px;
+}
+
+.skills-card h3{
+color:#00e0ff;
+margin-bottom:25px;
+text-align:center;
+}
+
+/* SKILL ITEM */
+
+/* Skill container */
+
+.skill{
+margin-bottom:20px;
+}
+
+/* Header containing skill name + percentage */
+
+.skill-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:14px;
+color:#ccc;
+margin-bottom:6px;
+}
+
+/* Skill name */
+
+.skill-header span:first-child{
+font-weight:500;
+}
+
+/* Percentage */
+
+.skill-header span:last-child{
+color:#8a5cff;
+font-weight:600;
+}
+
+/* Progress bar */
+
+.bar{
+width:100%;
+height:8px;
+background:#222;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar div{
+height:100%;
+background:linear-gradient(90deg,#5f9cff,#8a5cff);
+border-radius:20px;
+transition:width 1.5s ease;
+}
+
+@keyframes growBar{
+from{width:0}
+}
+.skills-section{
+position:relative;
+z-index:2;
 }
