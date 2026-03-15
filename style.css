@@ -6,7 +6,7 @@ font-family:Poppins;
 }
 
 body{
-background:#050505;
+background:transparent;
 color:white;
 }
 
@@ -177,7 +177,7 @@ height:80vh;
 display:flex;
 align-items:center;
 justify-content:center;
-background:black;
+background:transparent;
 
 }
 
@@ -203,7 +203,7 @@ color:transparent;
 .about-content{
 
 padding:120px 20%;
-background:#050505;
+background:#transparent;
 color:#aaa;
 font-size:18px;
 line-height:1.8;
@@ -220,7 +220,7 @@ max-width:900px;
 .who-section{
 min-height:120vh;
 padding:100px 10%;
-background:#050505;
+background:transparent;
 }
 
 .who-container{
@@ -291,7 +291,7 @@ transform:translateY(0);
 
 .hobbies-section{
 padding:100px 10%;
-background:#050505;
+background:#transparent;
 }
 
 .hobbies-title{
@@ -330,7 +330,7 @@ border-color:#7a5cff;
 
 .projects-section{
 padding:100px 10%;
-background:#050505;
+background:transparent;
 }
 
 .projects-title{
@@ -419,7 +419,7 @@ font-size:14px;
 
 .skills-section{
 padding:120px 8%;
-background:black;
+background:transparent;
 text-align:center;
 }
 
@@ -514,7 +514,7 @@ transform:translateY(0px);
 .resume-section{
 padding:120px 10%;
 text-align:center;
-background:black;
+background:transparent;
 }
 
 .resume-title{
@@ -578,7 +578,7 @@ line-height:1.6;
 
 .education-section{
 padding:100px 10%;
-background:black;
+background:transparent;
 }
 
 /* TITLE */
@@ -644,7 +644,7 @@ transform:translateY(-5px);
 .certificates-section{
 padding:120px 10%;
 text-align:center;
-background:black;
+background:transparent;
 }
 
 .cert-title{
@@ -729,7 +729,7 @@ justify-content:center;
 align-items:center;
 
 text-align:center;
-background:#050505;
+background:transparent;
 padding:100px 10%;
 }
 
@@ -771,4 +771,17 @@ font-size:40px;
 font-size:24px;
 }
 
+}
+.hero-right img{
+box-shadow:0 0 60px rgba(122,92,255,0.4);
+}
+#particles-js{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1; /* keeps particles behind everything */
+background:#050505;
+pointer-events:none;
 }
